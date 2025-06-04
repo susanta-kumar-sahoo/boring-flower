@@ -24,7 +24,7 @@ jobs:
           cache: 'npm' # Cache npm dependencies to speed up builds
 
       - name: Install dependencies
-        run: npm ci # Installs dependencies from package-lock.json for consistent builds
+        run: npm install # Installs dependencies from package-lock.json for consistent builds
 
       - name: Build Node.js application
         run: npm run build # Runs the 'build' script defined in your package.json
